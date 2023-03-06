@@ -1,0 +1,395 @@
+@font-face {
+    font-family: 'iconfont';
+    src: url('../fonts/iconfont.woff2?t=1653889775019') format('woff2'),
+        url('../fonts/iconfont.woff?t=1653889775019') format('woff'),
+        url('../fonts/iconfont.ttf?t=1653889775019') format('truetype');
+}
+
+.w {
+    width: 1200px;
+    margin: 0 auto;
+}
+
+.style_red {
+    color: #c81623;
+}
+
+/* 公共头部模块start */
+/* 快捷导航栏模块start */
+.shortcut {
+    background-color: #f1f1f1;
+    height: 32px;
+    line-height: 32px;
+}
+
+.fl {
+    float: left;
+    height: 32px;
+}
+
+.fl ul li {
+    float: left;
+    padding-right: 10px;
+}
+
+.fr {
+    float: right;
+    height: 32px;
+}
+
+.fr ul li {
+    float: left;
+}
+
+.fr ul li:nth-child(2n) {
+    height: 12px;
+    width: 1px;
+    background-color: #666666;
+    margin: 9px 15px;
+}
+
+.icon_font::after {
+    content: "\e6cc";
+    font-family: 'iconfont';
+    margin-left: 9px;
+}
+
+/* 快捷导航栏模块ent */
+/* 头部模块start */
+.header {
+    position: relative;
+    height: 105px;
+}
+
+.logo {
+    position: absolute;
+    top: 25px;
+    width: 171px;
+    height: 61px;
+}
+
+.logo a {
+    display: block;
+    width: 171px;
+    height: 61px;
+    background: url(../images/logo.png) no-repeat;
+    font-size: 0px;
+    animation: logo 1.8s linear infinite alternate;
+}
+.logo a:hover {
+    animation-play-state: paused;
+}
+@keyframes logo {
+    0%{
+        transform: translateX(0);
+    }
+    100% {
+        transform: translateX(88px);
+    }
+    }
+.search {
+    position: absolute;
+    top: 25px;
+    left: 348px;
+    width: 540px;
+    height: 36px;
+    border: 2px solid #b1191a;
+}
+
+.search input {
+    float: left;
+    width: 456px;
+    height: 32px;
+    padding-left: 12px;
+    background: url(../images/camera_01.png) no-repeat 420px;
+}
+.search input:focus {
+    background: url(../images/camera_02.png) no-repeat 420px;
+}
+.search button {
+    float: left;
+    width: 80px;
+    height: 32px;
+    background-color: #b1191a;
+    color: #fff;
+    border: none;
+    transition: all .5s linear;
+}
+.search button:hover {
+    background-color: #de0000;
+}
+.hotwrods {
+    position: absolute;
+    left: 348px;
+    top: 70px;
+}
+
+.hotwrods ul li {
+    float: left;
+    padding: 0 12px;
+}
+
+.shopcar {
+    position: absolute;
+    top: 25px;
+    right: 64px;
+    width: 140px;
+    height: 36px;
+    line-height: 36px;
+    text-align: center;
+    background-color: #f7f7f7;
+    border: 1px solid #dfdfdf;
+}
+
+.count {
+    position: absolute;
+    top: -5px;
+    left: 105px;
+    height: 15px;
+    line-height: 15px;
+    background-color: #e60012;
+    color: #fff;
+    padding: 0 5px;
+    border-radius: 7px 7px 7px 0;
+}
+
+.shopcar::before {
+    content: "\e682";
+    font-family: 'iconfont';
+    color: red;
+    font-size: 16px;
+}
+
+.shopcar::after {
+    content: "\e662";
+    font-family: 'iconfont';
+}
+
+/* 头部模块ent*/
+/* 导航栏模块start */
+.nav {
+    height: 47px;
+    border-bottom: 2px solid #b1191a;
+}
+
+.nav .dropdown {
+    position: relative;
+    float: left;
+    height: 47px;
+    width: 210px;
+    background-color: #c81623;
+}
+/* tab栏切换 */
+
+.dropdown .dt {
+    width: 100%;
+    height: 100%;
+    line-height: 47px;
+    color: #fff;
+    font-size: 16px;
+    text-align: center;
+    background-color: #b1191a;
+}
+
+.dropdown .dd {
+    /* display: none; */
+    width: 210px;
+    height: 467px;
+    background-color: #c81623;
+}
+
+
+.dropdown .dd ul li {
+    height: 31px;
+    line-height: 31px;
+    padding: 0 10px;
+    transition: all .3s;
+
+}
+
+.dropdown .dd ul li a {
+    color: #fff;
+    font-size: 14px;
+}
+
+.dropdown .dd ul li:hover {
+    background-color: #fff;
+    padding-left: 20px;
+}
+
+.dropdown .dd ul li:hover a {
+    color: #c81623;
+}
+
+.dropdown .dd ul li::after {
+    content: "\e662";
+    font-family: 'iconfont';
+    float: right;
+    color: #fff;
+}
+
+.navitems {
+    float: left;
+}
+.navitems ul li {
+    float: left;
+    width: 100px;
+    height: 43px;
+    perspective: 100000px;
+    text-align: center;
+    padding-top: 1px;
+    margin-right: 1px;
+}
+.navitems ul li:nth-child(1) {
+    margin-left: 9px;
+}
+.navitems ul li a {
+    color: #fff;
+    font-size: 16px;
+   
+}
+.navitems ul li .box {
+    position: relative;
+    width: 100%;
+    height: 38px;
+    line-height: 38px;
+    margin-top: 5px;
+    transform-style: preserve-3d;
+    transition: all .7s;
+}
+.navitems ul li .box:hover {
+    transform: rotateX(90deg);
+}
+.fonrt,
+.bottom{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+.fonrt {
+    z-index: 1;
+    background-color: #b1191a;
+    transform: translateZ(19px);
+
+}
+.bottom {
+    background-color: #de0000;
+    transform: translateY(50%) rotateX(-90deg);
+}
+/* .navitems ul li {
+    float: left;
+}
+
+.navitems ul li a {
+    height: 47px;
+    line-height: 47px;
+    font-size: 16px;
+    padding: 0 25px;
+} */
+
+/* 导航栏模块ent */
+/* 公共头部模块ent */
+/* 公共尾部模块start */
+.footer {
+    height: 418px;
+    /* background-color: #f5f5f5; */
+    margin-top: 35px;
+}
+
+.service {
+    height: 110px;
+    border-bottom: 1px solid #ccc;
+}
+
+.service ul li {
+    float: left;
+    width: 238px;
+    height: 50px;
+    padding-left: 35px;
+    padding-top: 30px;
+}
+
+.service .yuan_one,
+.service .yuan_two,
+.service .yuan_three,
+.service .yuan_four,
+.service .yuan_five {
+    float: left;
+    width: 50px;
+    height: 50px;
+    margin-right: 8px;
+}
+
+.service .yuan_one {
+    background: url(../images/icons.png) no-repeat -252px -2px;
+}
+
+.service .yuan_two {
+    background: url(../images/icons.png) no-repeat -254px -54px;
+}
+
+.service .yuan_three {
+    background: url(../images/icons.png) no-repeat -256px -106px;
+}
+
+.service .yuan_four {
+    background: url(../images/icons.png) no-repeat -258px -156px;
+}
+
+.service .yuan_five {
+    background: url(../images/icons.png) no-repeat -258px -208px;
+}
+
+.service ul li h4 {
+    color: #333;
+    font-size: 16px;
+    padding-bottom: 5px;
+}
+
+.help {
+    width: 1200px;
+    height: 188px;
+    border-bottom: 1px solid #ccc;
+    padding-left: 50px;
+    padding-top: 20px;
+
+}
+
+.help dl {
+    float: left;
+    width: 200px;
+}
+
+.help dl:nth-child(6) {
+    width: 90px;
+    text-align: center;
+}
+
+.help dl dt {
+    color: #333;
+    font-size: 16px;
+    margin-bottom: 10px;
+}
+
+.help dl dd {
+    height: 20px;
+    line-height: 20px;
+}
+.mod_copyright {
+    text-align: center;
+    padding-top: 20px;
+}
+.links {
+    margin-bottom: 15px;
+}
+.links a {
+    margin: 0 3px;
+}
+.copyright {
+    line-height: 20px;
+}
+
+
+/* 公共尾部模块ent */

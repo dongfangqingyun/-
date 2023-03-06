@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>登录</title>
+    <meta name="description"
+        content="品优购商城-专业的综合网上购物商城,销售家电、数码通讯、电脑、家居百货、服装服饰、母婴、图书、食品等数万个品牌优质商品.便捷、诚信的服务，为您提供愉悦的网上购物体验!" />
+    <!-- 关键字 -->
+    <meta name="keywords" content="网上购物,网上商城,手机,笔记本,电脑,MP3,CD,VCD,DV,相机,数码,配件,手表,存储卡,京东" />
+    <!-- 引入favicon图标 -->
+    <link rel="shortcut icon" href="favicon.ico">
+    <!-- 引入css初始化 -->
+    <link rel="stylesheet" href="css/base.css">
+    <!-- 引入我们专属的登录样式 -->
+    <link rel="stylesheet" href="css/sign in.css">
+</head>
+
+<body>
+    <section class="sign_in">
+        <div class="w">
+          <div class="logo">
+            <a href="index.html" target="_blank"> <img src="images/logo.png" alt="">
+            </a>
+          </div>
+        </div>
+        <div class="bg">
+            <div class="sign_in1">
+                <ul>
+                    <li><a href="#">扫码登陆</a><i class=border></i><a href="#">账户登陆</a></li>
+                    <li>公共场所不建议自动登录，以免账号丢失</li>
+                    <li><input type="text" placeholder="邮箱/用户名/手机号" class="denglu">
+                        <span class="box1"></span>
+                    </li>
+                    <li><input type="password" placeholder="请输入密码" id="key">
+                        <label for="">
+                            <img src="images/close.png" alt="" id="eye">
+                        </label>
+                        <span class="box2"></span>
+                        <script>
+                            var key = document.getElementById('key');
+                            var eye = document.getElementById('eye');
+                            var flag = 0;
+                            eye.onclick = function() {
+                                if(flag == 0) {
+                                    key.type = 'text';
+                                    eye.src = 'images/open.png';
+                                    flag = 1;
+                                } else {
+                                    key.type = 'password';
+                                    eye.src = 'images/close.png';
+                                    flag = 0;
+                                }
+                            }
+                        </script>
+                    </li>
+                    
+                    <li>
+                        <input type="checkbox" name="" checked="checked" class="one">自动登陆
+                        <a href="#">忘记密码？</a>
+                    </li>
+                    <li><input type="submit" value="登录" class="dl"></li>
+                    <li>
+                        <span></span><span></span><span></span><span></span>
+                        <a href="register.html" target="_blank">立即注册</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </section>
+    <section class="footer">
+        <div class="mod_copyright">
+            <div class="links">
+                <a href="#">关于我们</a> | <a href="#">联系我们</a> | 联系客服 | 商家入驻 | 营销中心 | 手机品优购 | 友情链接 | 销售联盟 | 品优购社区 |
+                品优购公益 | English Site | Contact U
+            </div>
+            <div class="copyright">
+                地址：北京市昌平区建材城西路金燕龙办公楼一层 邮编：100096 电话：400-618-4000 传真：010-82935100 邮箱: zhanghj+itcast.cn <br>
+                京ICP备08001421号京公网安备110108007702
+            </div>
+        </div>
+    </section>
+</body>
+
+</html>

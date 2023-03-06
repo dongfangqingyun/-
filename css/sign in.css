@@ -1,0 +1,161 @@
+.w {
+    width: 1200px;
+    margin: 0 auto;
+}
+.logo {
+    width: 171px;
+    height: 80px;
+    line-height: 80px;
+    animation: logo 1.8s linear infinite alternate;
+}
+.logo :hover {
+    animation-play-state: paused;
+}
+@keyframes logo {
+    0%{
+        transform: translateX(0);
+    }
+    100% {
+        transform: translateX(88px);
+    }
+    }
+.bg {
+    position: relative;
+    height: 490px;
+    background: url(../upload/登录页/bg.png) no-repeat -260px ;
+}
+.sign_in1 {
+    position: absolute;
+    left: 800px;
+    top: 65px;
+    width: 382px;
+    height: 364px;
+    background-color: #fff;
+}
+.sign_in1 ul li {
+    margin-left: 38px;
+}
+.sign_in1 ul li:first-child {
+    height: 65px;
+    line-height: 65px;
+    padding: 0 10px;
+}
+.sign_in1 ul li:nth-of-type(1) a:nth-of-type(1) {
+    font-size: 18px;
+    color: #b2b2b2;
+}
+.sign_in1 ul li .border {
+    display: inline-block;
+    height: 24px;
+    width: 1px;
+    margin: 0 65px;
+    vertical-align: middle;
+    background-color: #ededed;
+}
+.sign_in1 ul li:nth-of-type(1) a:nth-of-type(2) {
+    font-size: 18px;
+    color: #c81623;
+}
+.sign_in1 ul li:nth-of-type(2) {
+    width: 303px;
+    height: 28px;
+    line-height: 28px;
+    padding-left: 10px;
+    margin-bottom: 10px;
+    background-color: #fffdee;
+    border: 1px solid #f5eecf;
+}
+.sign_in1 ul li .denglu,#key{
+    width: 303px;
+    height: 36px;
+    line-height: 38px;
+    padding-left: 50px;
+    margin-bottom: 18px;
+    background: url(../upload/登录页/zhanghao.png) no-repeat;
+    border: 1px solid #3aa2e4;
+}
+.sign_in1 ul li #key {
+    background: url(../upload/登录页/key.png) no-repeat;
+    border: 1px solid #bbbaba;
+
+}
+.sign_in1 ul li:nth-of-type(4) {
+    position: relative;
+}
+.sign_in1 ul li #eye{
+    position: absolute;
+    top: 5px;
+    right: 50px;
+    width: 24px;
+}
+.sign_in1 ul li:nth-child(5) {
+    width: 303px;
+    height: 50px;
+    line-height: 50px;
+    color: #b2b2b2;
+}
+.sign_in1 ul li .one {
+    vertical-align: middle;
+    margin-top: -3px;
+    margin-right: 5px;
+}
+.sign_in1 ul li:nth-child(5) a {
+    float: right;
+}
+.sign_in1 ul li .dl {
+    cursor: pointer;
+    width: 303px;
+    height: 45px;
+    background-color: #c81623;
+    color: #fff;
+    font-size: 16px;
+}
+.sign_in1 ul li:nth-child(7) {
+    width: 303px;
+    height: 35px;
+    margin-top: 15px;
+}
+.sign_in1 ul li:nth-child(7) span:nth-child(n) {
+    display: inline-block;
+    width: 35px;
+    height: 32px;
+    margin-right: 20px;
+    vertical-align: middle;
+}
+.sign_in1 ul li:nth-child(7) span:nth-child(1) {
+    background: url(../upload/登录页/jlt.png) no-repeat -18px -8px;
+}
+.sign_in1 ul li:nth-child(7) span:nth-child(2) {
+    background: url(../upload/登录页/jlt.png) no-repeat -70px -8px;
+}
+.sign_in1 ul li:nth-child(7) span:nth-child(3) {
+    background: url(../upload/登录页/jlt.png) no-repeat -122px -8px;
+}
+.sign_in1 ul li:nth-child(7) span:nth-child(4) {
+    background: url(../upload/登录页/jlt.png) no-repeat -174px -8px;
+}
+.sign_in1 ul li:nth-child(7) span {
+    transition: all .5s linear;
+    cursor: pointer;
+}
+.sign_in1 ul li:nth-child(7) span:hover {
+    transform: scale(1.1);
+}
+.sign_in1 ul li:nth-child(7) a:nth-of-type(1) {
+    margin-left: 20px;
+    color: #3aa2e4;
+}
+.mod_copyright {
+    text-align: center;
+    padding-top: 20px;
+    padding-bottom: 40px;
+}
+.links {
+    margin-bottom: 15px;
+}
+.links a {
+    margin: 0 3px;
+}
+.copyright {
+    line-height: 20px;
+}

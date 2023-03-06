@@ -1,0 +1,154 @@
+/* 列表页专属样式 */
+.miaosha {
+    position: absolute;
+    top: 40px;
+    left: 190px;
+    border-left: 2px solid #c81523;
+    padding-left: 15px;
+    cursor: pointer;
+    animation: logo 1.8s linear infinite alternate;
+
+}
+.miaosha:hover {
+    animation-play-state: paused;
+}
+@keyframes logo {
+    0%{
+        transform: translateX(0);
+    }
+    100% {
+        transform: translateX(88px);
+    }
+    }
+
+.shortcut_1 {
+    height: 70px;
+    border-bottom: 2px solid #b1191a;
+    padding-top: 30px;
+}
+.f_left {
+    float: left;
+    height: 40px;
+    line-height: 40px;
+   
+}
+.f_left ul li {
+    float: left;
+}
+.f_left ul li a {
+    font-size: 16px;
+    font-weight: 700;
+    color: #000;
+    padding: 0 20px;
+}
+.f_left ul li:hover a {
+    color: #b1191a;
+}
+.f_right {
+    float: right;
+    height: 40px;
+    line-height: 40px;
+    padding-right: 50px;
+}
+.f_right ul li {
+    float: left;
+    padding: 0 22px;
+}
+.f_right ul li a {
+    font-size: 14px;
+}
+.f_right ul li:last-child::after {
+    content: "\e6cc";
+    font-family: 'iconfont';
+}
+.phone {
+    margin-bottom: 280px;
+}
+.phone_top {
+    width: 1200px;
+    height: 120px;
+    background: url(../upload/列表页/bg_03.png) no-repeat;
+}
+.phone_bd ul li {
+    position: relative;
+    float: left;
+    width: 301px;
+    height: 462px;
+    margin-left: -1px;
+    margin-top: -1px;
+    cursor: pointer;
+    border: 1px solid transparent;
+    transition: all .5s linear;
+}
+.phone_bd ul li:hover {
+    transform: translateY(-1px);
+    box-shadow: 0 0 5px #c50000;
+    z-index: 1;
+}
+.phone_bd ul li div:nth-of-type(1) {
+    text-align: center;
+}
+.phone_bd ul li p:nth-of-type(1) {
+    font-size: 14px;
+    padding-left: 12px;
+}
+.phone_bd ul li .jiage ,.jindu {
+    padding-top: 10px;
+    padding-left: 12px;
+}
+.phone_bd ul li .jiage i:nth-child(1) {
+    color: #ed282e;
+}
+.phone_bd ul li .jiage span:nth-of-type(1) {
+    font-size: 22px;
+    color: #ed282e;
+}
+.phone_bd ul li .jiage span:nth-of-type(2) {
+    font-size: 14px;
+    color: #a4a4a4;
+    text-decoration: line-through;
+    margin-left: 10px;
+}
+.phone_bd ul li .jindu span:nth-of-type(1) {
+    float: left;
+    font-size: 14px;
+}
+.phone_bd ul li .jindu span:nth-of-type(3) {
+    float: right;
+    font-size: 14px;
+    margin-right: 10px;
+}
+.phone_bd ul li .jindu span:nth-of-type(2) {
+    display: inline-block;
+    width: 135px;
+    height: 13px;
+    margin: 0 10px;
+    vertical-align: middle;
+  border: 1px solid #ed282e;
+    border-radius: 7px;
+}
+.phone_bd ul li .jindu span:nth-of-type(2) i {
+    display: inline-block;
+    float: left;
+    width: 87%;
+    height: 100%;
+    background-color: #ed282e;
+    transition: all 1s;
+}
+.phone_bd ul li .jindu span:nth-of-type(2):hover i {
+    width: 100%;
+}
+.phone_bd ul li div:nth-of-type(4) {
+    width: 100%;
+    height: 48px;
+    color: #fff;
+    text-align: center;
+    line-height: 48px;
+    font-size: 20px;
+    background-color: #b1191a;
+    margin-top: 10px;
+
+}
+.phone_bd ul li div:nth-of-type(4) a {
+    color: #fff;
+}
